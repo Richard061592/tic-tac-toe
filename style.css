@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(330deg, darkred, darkorange, lightblue, teal, darkblue );
+    color: rgb(0, 0, 0);
+    font-family: serif;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#container {
+    margin: 5% auto;
+    border-radius: 5px;
+    text-align: center;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 18px;
+    box-shadow: 0 4px 40px rgb(40, 40, 40, 0.1);
+    color: #232323;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    flex-basis: 400px;
+    height: 310px;
+    width: 400px;
+    padding: 25px 40px;
+}
+
+.box {
+    
+    display: inline-block;
+    border: 2px solid darkgreen;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+span {
+    position: absolute;
+    font-size: 80px;
+    font-family: inherit;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+}
+
+.top {
+    border-top: none;
+}
+
+.left {
+    border-left: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.alert {
+    height: 80px;
+    width: 130px;
+    display: inline-block;
+    background: ghostwhite;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 80px 4px dimgray;
+    animation: larger 1.0s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+}
+
+button:focus {
+    background: silver;
+}
+
+.activeBox {
+    background: silver;
+}
+
+@keyframes larer {
+        from {
+            height: 80px;
+            width: 130px
+        }
+
+        to {
+            height: 110px;
+            width: 260px;
+        }
+}
